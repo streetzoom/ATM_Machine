@@ -3,22 +3,31 @@
 #include <string>
 #include <cstdlib>
 /**TODO:
- * 1:main_menu
- * 2:get_input
- * 3:login function
- * 4:register_user
- * get_username
- * get_password
- * save_user
- * 5:fail attempts
- * 6:
+* Login system{
+* welcome_menu
+* get_input
+* user login
+* register user
+* get_username
+* get_password
+* save_user
+* fail attempts
+* }
+* 
+* atm system{
+* welcome menu
+* get_input
+* deposit
+* withdraw
+* check balance
+* }
 **/
 
 
 int main()
 {
 
-    std::cin.get();
+    
     return 0;
 }
 
