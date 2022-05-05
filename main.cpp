@@ -1,7 +1,6 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <string_view>
 #include <cstdlib>
 /**TODO:
 * 
@@ -50,7 +49,7 @@ public:
 
 	void showData()
 	{
-		std::cout << "Account Name: " << &name << std::endl;
+		std::cout << "Account Name: " << name << std::endl;
 		std::cout << "Account No: " << account_number << std::endl;
 		std::cout << "Account type: " << type << std::endl;
 		std::cout << "Balance: " << total << std::endl;
@@ -60,6 +59,7 @@ public:
 	{
 		std::cout << "Enter amount to be deposited\n";
 		std::cin >> amount;
+
 	}
 
 	void showBalance()
@@ -74,7 +74,7 @@ public:
 		std::cout << "Enter amount to withdraw\n";
 		std::cin >> wd;
 		available_balance = total - wd;
-		std::cout << "Available balance is" << available_balance;
+		std::cout << "Available balance is " << available_balance;
 	}
 };
     
@@ -83,7 +83,7 @@ int main()
 	Bank b;
 	int choice;
 
-	while (1) {
+	while (true) {
 		std::cout << "\n~~~~~~~~~~~~~~~~~~~~~~~~~~"
 			<< "~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
 			<< "~~~WELCOME~~~~~~~~~~~~~~~~~~"
@@ -118,7 +118,6 @@ int main()
 			break;
 		case 6:
 			exit(1);
-			break;
 		default:
 			std::cout << "\nInvalid input\n";
 		}
